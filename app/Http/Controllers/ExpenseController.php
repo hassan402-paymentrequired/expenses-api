@@ -15,7 +15,7 @@ class ExpenseController extends Controller
                 $user->expenses = $user->tasks;
                 unset($user->tasks);
                 return $user;
-            })
+            }) 
         ], 200);
     }
 
@@ -74,4 +74,7 @@ class ExpenseController extends Controller
             'message' => 'Expense deleted successfully',
         ], 200);
     }
+
+    public function method(): void
+    {}
 }
